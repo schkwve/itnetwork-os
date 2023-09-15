@@ -16,7 +16,7 @@ BytyNaSektor:		dw 512
 SektoryNaCluster:	db 1
 RezervovaneSektory:	dw 1
 PocetFATu:			db 2
-KorenoveVstupy:		dw 224
+KorenoveAdresare:		dw 224
 CelkemSektoru:		dw 2880
 Media:				db 0xF0
 SektoryNaFAT:		dw 9
