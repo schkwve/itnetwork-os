@@ -5,6 +5,5 @@ vypis:
 	mov ah, 0eh		; preruseni 0x10 ma vice funkci - funkce 0x0e vypisuje text na obrazovku
 	int 10h
 	jmp vypis		; vypiseme dalsi znak na rade
-
-vypisHotovo:
-	ret
+	vypisHotovo:	
+		ret
