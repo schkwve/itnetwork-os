@@ -29,7 +29,7 @@ SerioveCislo:		dd 0xa0a1a2a3
 NazevDisku:			db "ITNETWORKOS"
 SouborovySystem:	db "FAT12   "
 
-%include "inc/boot/print.asm"
+%include "inc/boot/print.inc"
 
 precti_sektory:
 	.vstup:
@@ -216,4 +216,3 @@ times 510 - ($-$$) db 0		; tato operace odsadi magicke cislo
 
 dw 0xAA55	; posledni dva byty musi byt "magicke cislo"
 			; aby bios precetl disk jako spustitelny
-
